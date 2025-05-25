@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <!-- basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- site metas -->
+    <title>PCOS BOT</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Responsive-->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- fevicon -->
+    <link rel="icon" href="images/fevicon.png" type="image/gif" />
+    <!-- font css -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        line-height: 1.6;
+        background-color: #f8f9fa;
+        color: #333;
+      }
+      header {
+        background: linear-gradient(135deg, #8e44ad, #9b59b6);
+        color: white;
+        padding: 2rem 0;
+      }
+      .navbar-brand img {
+        max-height: 60px;
+      }
+      .hero {
+        padding: 4rem 0;
+        background: linear-gradient(to bottom right, #fff, #f0e6f6);
+      }
+      .hero h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+      }
+      .section-title {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        border-left: 5px solid #9b59b6;
+        padding-left: 1rem;
+      }
+      .info-section {
+        padding: 3rem 0;
+      }
+      footer {
+        background: #2c3e50;
+        color: white;
+        padding: 2rem 0;
+      }
+      footer a {
+        color: #ecf0f1;
+        text-decoration: none;
+      }
+      .whatsapp-btn {
+        background-color: #25D366;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: bold;
+        display: inline-block;
+        margin-top: 1rem;
+      }
+      .card {
+        border: none;
+        border-radius: 1rem;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      }
+      .floating-whatsapp {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 60px;
+        height: 60px;
+        background-color: #25D366;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        z-index: 9999;
+      }
+      .floating-whatsapp img {
+        width: 30px;
+        height: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <header style="background: linear-gradient(135deg, #8e44ad, #9b59b6); color: white; padding: 2rem 0 0;">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/Logo_PCOS-removebg-preview.png" alt="Logo PCOS BOT" style="width: 150px; height: auto;">
+          </a>
+        </nav>
+        <div class="text-center mt-4 mb-5">
+          <h1>Deteksi Awal PCOS Secara Cepat & Mudah</h1>
+          <p class="lead">Bantu kamu mengenali gejala PCOS lebih dini melalui chatbot berbasis AI di WhatsApp.</p>
+          <a class="whatsapp-btn" href="https://wa.me/6285604758517?text=Halo%2C%20saya%20ingin%20menggunakan%20PCOS%20Bot">Mulai Chatbot</a>
+        </div>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row align-items-center">
+                <div class="col-md-6">
+                  <h2 class="fw-bold">Tentang PCOS</h2>
+                  <p>(Polycystic Ovary Syndrome) adalah kondisi hormonal yang umum dialami wanita usia subur. Gejalanya bisa berupa haid tidak teratur, jerawat, dan pertumbuhan rambut berlebih. Deteksi dini penting agar bisa ditangani lebih baik.</p>
+                </div>
+                <div class="col-md-6 text-center">
+                  <img src="images/PCOS-removebg-preview.png" class="img-fluid" alt="Tentang PCOS">
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row align-items-center">
+                <div class="col-md-6">
+                  <h2 class="fw-bold">Gejala PCOS</h2>
+                  <p>Haid tidak teratur, jerawat membandel, hingga rambut tumbuh berlebih bisa jadi tanda PCOS. Deteksi dini penting untuk mencegah komplikasi jangka panjang.</p>
+                </div>
+                <div class="col-md-6 text-center">
+                  <img src="images/PCOS_2-removebg-preview.png" class="img-fluid" alt="Gejala PCOS">
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row align-items-center">
+                <div class="col-md-6">
+                  <h2 class="fw-bold">Diagnosis PCOS</h2>
+                  <p>Pemeriksaan hormon, USG, dan analisis siklus menstruasi diperlukan untuk memastikan diagnosis PCOS secara akurat.</p>
+                </div>
+                <div class="col-md-6 text-center">
+                  <img src="images/PCOS_3-removebg-preview.png" class="img-fluid" alt="Diagnosis PCOS">
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row align-items-center">
+                <div class="col-md-6">
+                  <h2 class="fw-bold">Penanganan Sederhana</h2>
+                  <p>Cukup jawab pertanyaan via WhatsApp. Chatbot kami akan menganalisis kemungkinan PCOS menggunakan teknologi machine learning - cepat, aman, dan tanpa biaya.</p>
+                </div>
+                <div class="col-md-6 text-center">
+                  <img src="images/PCOS_4-removebg-preview.png" class="img-fluid" alt="Penanganan PCOS">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <a class="floating-whatsapp" href="https://wa.me/6285604758517?text=Halo%2C%20saya%20ingin%20menggunakan%20PCOS%20Bot" target="_blank">
+      <img src="images/Logo_PCOS-removebg-preview.png" alt="Chatbot">
+    </a>
+
+    <section class="hero">
+      <div class="container">
+        <div class="row align-items-center">
+          <h2 class="section-title">Apa itu PCOS?</h2>
+          <p class="about_text">PCOS (Polycystic Ovary Syndrome) adalah gangguan hormon yang umum terjadi pada wanita usia reproduksi, yaitu sekitar usia 15 hingga 44 tahun. Kondisi ini ditandai oleh ketidakseimbangan hormon reproduksi yang menyebabkan gangguan pada siklus menstruasi dan fungsi ovarium. Pada wanita dengan PCOS, ovarium bisa membesar dan mengandung banyak folikel kecil yang menghambat pelepasan sel telur secara teratur. Hal ini menyulitkan proses ovulasi dan berpotensi menyebabkan masalah kesuburan. Gejala PCOS sangat bervariasi pada tiap individu. Gejala umum meliputi menstruasi tidak teratur atau tidak terjadi sama sekali, pertumbuhan rambut berlebih (hirsutisme) di area seperti wajah dan perut, jerawat yang sulit diatasi, kulit berminyak, hingga penambahan berat badan tanpa sebab yang jelas. PCOS juga sering dikaitkan dengan resistensi insulin, yang dapat meningkatkan risiko penyakit kronis seperti diabetes tipe 2, tekanan darah tinggi, gangguan kolesterol, dan masalah psikologis seperti depresi atau kecemasan.</p>
+          <p class="about_text">Penyebab pasti PCOS belum diketahui secara menyeluruh, namun faktor genetik dan gaya hidup memainkan peran penting. Wanita dengan riwayat keluarga PCOS memiliki risiko lebih tinggi, terutama bila disertai dengan pola makan tidak seimbang, stres kronis, dan minim aktivitas fisik. Kelebihan berat badan juga dapat memperparah resistensi insulin dan memperburuk gejala yang dialami. Untuk menegakkan diagnosis, dokter biasanya mempertimbangkan kombinasi gejala klinis, hasil tes darah (terutama kadar hormon androgen, insulin, dan hormon luteinizing), serta pemeriksaan ultrasonografi (USG) ovarium. Walau belum ada obat untuk menyembuhkan PCOS sepenuhnya, kondisi ini dapat dikelola secara efektif dengan perubahan gaya hidup sehat dan terapi medis. Penanganan yang konsisten bisa membantu mengurangi gejala, meningkatkan kesuburan, dan mencegah komplikasi jangka panjang, sehingga kualitas hidup penderita tetap terjaga.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="info-section bg-white">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="card p-4">
+              <h3 class="section-title">Gejala Umum</h3>
+              <p class="about_text">Gejala PCOS bisa berbeda-beda pada setiap wanita, baik dari segi jenis maupun tingkat keparahannya. Salah satu gejala paling umum adalah menstruasi yang tidak teratur , bisa berupa siklus haid yang jarang (oligomenore), sangat lama, atau bahkan tidak terjadi sama sekali (amenore). Gangguan ini disebabkan oleh kurangnya ovulasi yang konsisten akibat ketidakseimbangan hormon, terutama hormon androgen yang berlebih. Gejala fisik lainnya termasuk pertumbuhan rambut berlebih (hirsutisme) di area seperti wajah, dagu, dada, atau perut, yang menyerupai pola pertumbuhan rambut pria. Selain itu, jerawat kronis, terutama di wajah, punggung, dan dada, juga menjadi tanda umum, disertai kulit berminyak dan terkadang muncul bercak gelap di lipatan tubuh (acanthosis nigricans) akibat resistensi insulin. Sebagian wanita juga mengalami kerontokan rambut di kulit kepala dengan pola menyerupai kebotakan pria (alopecia androgenik).</p>
+              <p class="about_text">Secara metabolik, PCOS sering dikaitkan dengan peningkatan berat badan yang sulit dikendalikan, khususnya di area perut, meskipun pola makan sudah dijaga. Banyak penderita juga mengalami kesulitan hamil akibat gangguan ovulasi, yang menjadikan PCOS sebagai salah satu penyebab infertilitas paling umum. Di sisi psikologis, penderita PCOS tidak jarang mengalami perubahan suasana hati, gangguan kecemasan, dan depresi, sebagai dampak dari perubahan hormonal maupun citra diri akibat gejala fisik yang dialami. Karena gejala-gejala ini dapat tumpang tindih dengan kondisi medis lain dan muncul secara perlahan, penting bagi wanita untuk memperhatikan perubahan dalam tubuhnya. Mendeteksi gejala PCOS sejak dini memungkinkan intervensi yang lebih cepat, sehingga risiko komplikasi jangka panjang dapat ditekan dan kualitas hidup tetap optimal.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card p-4">
+              <h3 class="section-title">Diagnosis</h3>
+              <p class="about_text">Diagnosis PCOS tidak dapat dilakukan hanya berdasarkan satu gejala saja, karena kondisi ini bersifat kompleks dan bervariasi pada tiap individu. Oleh karena itu, para ahli menggunakan kriteria diagnostik tertentu, salah satunya adalah Kriteria Rotterdam, yang menetapkan bahwa diagnosis PCOS dapat ditegakkan jika pasien memenuhi minimal dua dari tiga kriteria utama: (1) siklus haid tidak teratur atau tidak adanya ovulasi, (2) tanda klinis atau kadar tinggi hormon androgen (hiperandrogenisme), dan (3) ovarium polikistik yang terdeteksi melalui pemeriksaan ultrasonografi (USG). Pemeriksaan pertama biasanya dimulai dengan wawancara medis untuk menggali riwayat menstruasi, perubahan fisik, dan adanya gejala seperti jerawat atau pertumbuhan rambut berlebih. Setelah itu, dilakukan pemeriksaan darah untuk mengevaluasi kadar hormon, termasuk testosteron, hormon luteinizing (LH), follicle-stimulating hormone (FSH), insulin, dan hormon tiroid, untuk memastikan bahwa tidak ada gangguan hormonal lain yang menyerupai PCOS. </p>
+              <p class="about_text">Ultrasonografi transvaginal atau USG perut digunakan untuk melihat apakah terdapat kista kecil (folikel) di ovarium serta menilai ukuran ovarium. Meskipun keberadaan ovarium polikistik menjadi salah satu indikator penting, tidak semua wanita dengan PCOS menunjukkan gambaran ini, terutama remaja atau mereka yang berada dalam fase awal perkembangan gejala. Karena gejalanya bisa menyerupai kondisi medis lain seperti gangguan tiroid, hiperplasia adrenal kongenital, atau sindrom Cushing, dokter perlu melakukan pendekatan menyeluruh dan tidak terburu-buru dalam menyimpulkan. Diagnosis yang akurat sangat penting agar rencana penanganan dapat disesuaikan dengan kondisi masing-masing individu , baik itu fokus pada pengaturan siklus haid, penurunan berat badan, peningkatan kesuburan, atau manajemen risiko jangka panjang.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card p-4">
+              <h3 class="section-title">Solusi Awal</h3>
+              <p class="about_text">Penanganan PCOS membutuhkan pendekatan holistik dan personal, namun langkah pertama yang sangat penting adalah deteksi dini. Di sinilah PCOS Bot hadir sebagai solusi berbasis teknologi yang dapat diakses siapa saja , cukup melalui aplikasi WhatsApp yang sudah akrab digunakan sehari-hari. Pengguna cukup menjawab serangkaian pertanyaan sederhana seputar gejala, pola menstruasi, dan kondisi tubuh. Jawaban ini kemudian diproses oleh sistem machine learning yang telah dilatih dengan data gejala PCOS, untuk memprediksi apakah pengguna memiliki kemungkinan mengalami sindrom ini atau tidak. Hasil skrining bersifat prediktif dan bukan diagnosis resmi, namun dapat menjadi bahan pertimbangan awal sebelum berkonsultasi ke dokter. Dengan mengetahui risiko sejak dini, pengguna dapat lebih sigap mengambil langkah pencegahan, seperti mengatur pola makan, berolahraga, atau memeriksakan diri ke klinik atau rumah sakit. Sistem ini dirancang agar tetap privat, akurat, dan mudah digunakan oleh siapa saja, terutama mereka yang tinggal di daerah dengan akses layanan medis terbatas.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card p-4">
+              <h3 class="section-title">Fitur Pengingat Haid</h3>
+              <p class="about_text">Selain fitur skrining, PCOS Bot juga dilengkapi dengan pengingat siklus menstruasi otomatis. Pengguna bisa mencatat tanggal menstruasi terakhir, lalu sistem akan mengirimkan notifikasi rutin di WhatsApp ketika siklus berikutnya mendekat. Fitur ini bermanfaat tidak hanya untuk melacak siklus haid, tetapi juga untuk mengenali pola menstruasi yang tidak teratur , salah satu indikator penting PCOS. Dengan kombinasi AI dan kenyamanan platform WhatsApp, PCOS Bot dirancang untuk menjadi asisten kesehatan digital yang praktis dan proaktif. Tujuannya adalah membantu wanita mengenali gejala lebih cepat, mengambil keputusan lebih cerdas, dan tetap terhubung dengan kesehatannya , kapan saja dan di mana saja.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h5>Kontak</h5>
+            <p><i class="fas fa-map-marker-alt"></i> Surabaya, Jawa Timur, Indonesia</p>
+            <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/6285604758517">+62 856-0475-8517</a></p>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:pcosbot@gmail.com">pcosbot@gmail.com</a></p>
+          </div>
+          <div class="col-md-6">
+            <h5>Newsletter</h5>
+            <form>
+              <div class="mb-3">
+                <input type="email" class="form-control" placeholder="Email kamu">
+              </div>
+              <button type="submit" class="btn btn-outline-light">Berlangganan</button>
+            </form>
+          </div>
+        </div>
+        <hr class="my-4">
+        <p class="text-center">&copy; 2025 PCOS Bot. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
